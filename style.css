@@ -14,25 +14,15 @@ body {
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 4fr;
-}
-
-nav,
-header,
-main {
-  /* border: 2px solid black; */
-}
-
-header {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
 }
 
 nav {
   grid-area: 1 / 1 / 3 / 2;
   background-color: #004e89;
   color: white;
-  padding: 15px;
+  padding: 15px 55px 15px 15px;
 }
 
 .nav-header {
@@ -67,6 +57,42 @@ nav h4 {
 
 .settings {
   margin-top: 50px;
+}
+
+header {
+  padding: 20px;
+}
+
+.header-line-1 {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin-bottom: 20px;
+}
+
+.alarm-dp-name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-line-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.dp-hi-name {
+  display: flex;
+}
+
+.btns {
+  align-self: center;
+}
+
+button {
+  width: 100px;
+  margin-right: 25px;
+  padding: 10px 30px;
+  border-radius: 40px;
+  font-weight: 600;
 }
 
 main {
