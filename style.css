@@ -168,11 +168,68 @@ main p {
   justify-content: space-between;
 }
 
+.projects article,
+.announcements > div,
+.trending section {
+  background-color: white;
+}
+
 .projects .article-icons {
   align-self: flex-end;
 }
 
-article,
+.announcements div {
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+
+.announcements article {
+  border-bottom: 1px solid #ced4da;
+  margin-bottom: 15px;
+}
+
+.announcements article:last-child {
+  border: none;
+  margin-bottom: 0px;
+}
+
+.announcements p {
+  margin-bottom: 15px;
+}
+
+.announcements article:last-child p {
+  margin-bottom: 0px;
+}
+
 .trending section {
-  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.trending-user {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.trending-user:last-child {
+  margin-bottom: 0px;
+}
+
+.trending-user img {
+  margin-right: 10px;
+}
+
+.trending-user div p:first-child {
+  font-weight: 600;
+}
+
+.projects article,
+.announcements div,
+.trending section {
+  box-shadow: #ced4da 3px 3px 2px 1px;
+}
+
+header {
+  border-bottom: 3px solid #ced4da;
 }
